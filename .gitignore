@@ -1,0 +1,8 @@
+*.pyc
+/.settings
+/.cache
+/build
+.project
+.pydevproject
+oebuild-*.conf
+!oebuild-bluestar.conf
