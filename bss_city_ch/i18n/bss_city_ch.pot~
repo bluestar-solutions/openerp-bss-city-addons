@@ -1,0 +1,252 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bss_city_ch
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-02 12:56+0000\n"
+"PO-Revision-Date: 2014-04-02 12:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bss_city_ch
+#: model:ir.model,name:bss_city_ch.model_bluestar_city
+msgid "City"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:bluestar.city,long_name:0
+msgid "Long name"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:bluestar.city,zip:0
+msgid "Zip"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:bluestar.city,short_name:0
+msgid "Short name"
+msgstr ""
+
+#. module: bss_city_ch
+#: selection:bluestar.city,zip_type:0
+msgid "Internal for the Post"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_sh
+msgid "Schaffhausen"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_vs
+msgid "Valais"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_sz
+msgid "Schwyz"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_so
+msgid "Solothurn"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_sg
+msgid "St. Gallen"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_ag
+msgid "Aargau"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_fr
+msgid "Fribourg"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_ge
+msgid "Geneva"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_bl
+msgid "Basel-Landschaft"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_tg
+msgid "Thurgau"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_vd
+msgid "Vaud"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:bluestar.city,country_id:0
+msgid "Country"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:bluestar.city,zip_complement:0
+msgid "Zip complement"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_be
+msgid "Bern"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_ju
+msgid "Jura"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:bluestar.city,state_id:0
+msgid "State"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:bluestar.city,zip_type:0
+msgid "Zip types"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:bluestar.city,name:0
+msgid "Name"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_ar
+msgid "Appenzell Ausserrhoden"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_bs
+msgid "Basel-Stadt"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_gr
+msgid "Graubünden"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_ur
+msgid "Uri"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:res.partner,city_id:0
+msgid "City Search"
+msgstr ""
+
+#. module: bss_city_ch
+#: selection:bluestar.city,zip_type:0
+msgid "Home addresses only"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_zg
+msgid "Zug"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:ir.model,name:bss_city_ch.model_res_partner
+msgid "Partner"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_de
+msgid "Germany (only for 8238 Büsingen)"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_ai
+msgid "Appenzell Innerrhoden"
+msgstr ""
+
+#. module: bss_city_ch
+#: selection:bluestar.city,zip_type:0
+msgid "PO Box only"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_ti
+msgid "Ticino"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_fl
+msgid "Principality of Liechtenstein"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_it
+msgid "Italy (only for 6911 Campione)"
+msgstr ""
+
+#. module: bss_city_ch
+#: selection:bluestar.city,zip_type:0
+msgid "Business"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_gl
+msgid "Glarus"
+msgstr ""
+
+#. module: bss_city_ch
+#: field:res.country.state,unique_code:0
+msgid "Unique code"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_zh
+msgid "Zurich"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_nw
+msgid "Nidwalden"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_ow
+msgid "Obwalden"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_ne
+msgid "Neuchâtel"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:res.country.state,name:bss_city_ch.res_country_state_ch_lu
+msgid "Lucerne"
+msgstr ""
+
+#. module: bss_city_ch
+#: model:ir.model,name:bss_city_ch.model_res_country_state
+msgid "Country state"
+msgstr ""
+
+#. module: bss_city_ch
+#: selection:bluestar.city,zip_type:0
+msgid "Home addresses and PO Box"
+msgstr ""
+
