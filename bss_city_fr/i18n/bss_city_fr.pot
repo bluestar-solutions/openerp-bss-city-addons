@@ -1,0 +1,492 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bss_city_fr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-02 12:58+0000\n"
+"PO-Revision-Date: 2014-04-02 12:58+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d81
+msgid "Tarn"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d75
+msgid "Paris"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d77
+msgid "Seine-et-Marne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d25
+msgid "Doubs"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d14
+msgid "Calvados"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d83
+msgid "Var"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d22
+msgid "Côtes d'Armor"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d68
+msgid "Haut-Rhin"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d54
+msgid "Meurthe-et-Moselle"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d52
+msgid "Haute-Marne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d57
+msgid "Moselle"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d33
+msgid "Gironde"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d43
+msgid "Haute-Loire"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d26
+msgid "Drôme"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d27
+msgid "Eure"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d20
+msgid "Corse"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d63
+msgid "Puy-de-Dôme"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d39
+msgid "Jura"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d41
+msgid "Loir-et-Cher"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d21
+msgid "Côte-d'Or"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d19
+msgid "Corrèze"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d1
+msgid "Ain"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d89
+msgid "Yonne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d53
+msgid "Mayenne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d94
+msgid "Val-de-Marne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d6
+msgid "Alpes-Maritimes"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d30
+msgid "Gard"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d87
+msgid "Haute-Vienne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d90
+msgid "Territoire-de-Belfort"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d65
+msgid "Hautes-Pyrénées"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d72
+msgid "Sarthe"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d44
+msgid "Loire-Atlantique"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d23
+msgid "Creuse"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d60
+msgid "Oise"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d47
+msgid "Lot-et-Garonne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d15
+msgid "Cantal"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d78
+msgid "Yvelines"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d95
+msgid "Val-d'Oise"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d55
+msgid "Meuse"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d61
+msgid "Orne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d37
+msgid "Indre-et-Loire"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d49
+msgid "Maine-et-Loire"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d79
+msgid "Deux-Sèvres"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d84
+msgid "Vaucluse"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d38
+msgid "Isère"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d92
+msgid "Hauts-de-Seine"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d48
+msgid "Lozère"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d42
+msgid "Loire"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d82
+msgid "Tarn-et-Garonne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d91
+msgid "Essonne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d29
+msgid "Finistère"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d34
+msgid "Hérault"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d62
+msgid "Pas-de-Calais"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d11
+msgid "Aude"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d5
+msgid "Hautes-Alpes"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d28
+msgid "Eure-et-Loir"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d56
+msgid "Morbihan"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d85
+msgid "Vendée"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d46
+msgid "Lot"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d66
+msgid "Pyrénées-Orientales"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d16
+msgid "Charente"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d73
+msgid "Savoie"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d45
+msgid "Loiret"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d50
+msgid "Manche"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d35
+msgid "Ille-et-Vilaine"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d4
+msgid "Alpes de Hautes-Provence"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d70
+msgid "Haute-Saône"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d3
+msgid "Allier"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d58
+msgid "Nièvre"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d88
+msgid "Vosges"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d51
+msgid "Marne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d10
+msgid "Aube"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d9
+msgid " Ariège"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d36
+msgid "Indre"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d2
+msgid "Aisne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d74
+msgid "Haute-Savoie"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d31
+msgid "Haute-Garonne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d32
+msgid "Gers"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d59
+msgid "Nord"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d69
+msgid "Rhône"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d7
+msgid "Ardèche"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d17
+msgid "Charente-Maritime"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d86
+msgid "Vienne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d40
+msgid "Landes"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d13
+msgid "Bouches-du-Rhône"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d12
+msgid "Aveyron"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d80
+msgid "Somme"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d93
+msgid "Seine-Saint-Denis"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d64
+msgid "Pyrénées-Atlantiques"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d76
+msgid "Seine-Maritime"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d24
+msgid "Dordogne"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d71
+msgid "Saône-et-Loire"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d8
+msgid "Ardennes"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d18
+msgid "Cher"
+msgstr ""
+
+#. module: bss_city_fr
+#: model:res.country.state,name:bss_city_fr.d67
+msgid "Bas-Rhin"
+msgstr ""
+
