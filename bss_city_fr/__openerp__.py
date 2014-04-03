@@ -29,9 +29,9 @@
 Search for french zip codes and cities
 =====================================
 
-This module imports a list of all french postal codes and cities and add a search field in partner form view. The search field can search data by postal codes or city name.
+This module imports a list of all french postal codes and cities.
 
-When a user selects a city, the module Cities fills the following fields automatically  : postal code, city, and country.    
+These datas are used by bss_city to search partner by postal codes or city name.
     """,
     'author': 'Bluestar Solutions Sàrl',
     'website': 'http://www.blues2.ch',

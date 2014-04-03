@@ -2,7 +2,7 @@
 ##############################################################################
 #    
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2012-2013 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2012-2014 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -33,7 +33,7 @@ Add a search field in partner form view. The search field can search data by pos
 
 When a user selects a city, the module fills the following fields automatically  : postal code, city, state and country.
 
-It depends on Swiss Cities and French Cities to get datas. 
+It depends on an external module to import the data, for example bss_city_ch.
     """,
     'author': 'Bluestar Solutions Sàrl',
     'website': 'http://www.blues2.ch',

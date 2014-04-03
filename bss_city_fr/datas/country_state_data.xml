@@ -52,7 +52,7 @@
 
 		<record id="d9" model="res.country.state">
 			<field name="country_id" search="[('code', '=', 'FR')]" model="res.country" />
-			<field name="name"> Ariège</field>
+			<field name="name">Ariège</field>
 			<field name="code">09</field>
 		</record>
 

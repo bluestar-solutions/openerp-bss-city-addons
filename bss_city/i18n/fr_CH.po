@@ -49,12 +49,12 @@ msgstr "Complément NPA"
 #. module: bss_city
 #: field:bluestar.city,country_id:0
 msgid "Country"
-msgstr ""
+msgstr "Pays"
 
 #. module: bss_city
 #: field:bluestar.city,zip:0
 msgid "Zip"
-msgstr "Pays"
+msgstr "NPA"
 
 #. module: bss_city
 #: field:res.country.state,unique_code:0
