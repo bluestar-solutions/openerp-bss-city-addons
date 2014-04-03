@@ -18,36 +18,11 @@ msgstr ""
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1378372837.0\n"
 
-#. module: bss_city_ch
-#: view:bluestar.city:0
-#: model:ir.model,name:bss_city_ch.model_bluestar_city
-msgid "City"
-msgstr "Localité"
-
-#. module: bss_city_ch
-#: field:bluestar.city,long_name:0
-msgid "Long name"
-msgstr "Nom long"
-
-#. module: bss_city_ch
-#: field:bluestar.city,zip:0
-msgid "Zip"
-msgstr "NPA"
-
-#. module: bss_city_ch
-#: field:bluestar.city,short_name:0
-msgid "Short name"
-msgstr "Nom court"
-
-#. module: bss_city_ch
-#: selection:bluestar.city,zip_type:0
-msgid "Internal for the Post"
-msgstr "Interne à la Poste"
 
 #. module: bss_city_ch
 #: model:res.country.state,name:bss_city_ch.res_country_state_ch_sh
 msgid "Schaffhausen"
-msgstr "Schaffhousen"
+msgstr "Schaffhouse"
 
 #. module: bss_city_ch
 #: model:res.country.state,name:bss_city_ch.res_country_state_ch_vs
@@ -99,37 +74,12 @@ msgstr "Thurgovie"
 msgid "Vaud"
 msgstr "Vaud"
 
-#. module: bss_city_ch
-#: field:bluestar.city,country_id:0
-msgid "Country"
-msgstr "Pays"
-
-#. module: bss_city_ch
-#: field:bluestar.city,zip_complement:0
-msgid "Zip complement"
-msgstr "Complément NPA"
-
-#. module: bss_city_ch
-#: view:bluestar.city:0
-#: model:ir.actions.act_window,name:bss_city_ch.action_bluestar_city
-#: model:ir.ui.menu,name:bss_city_ch.menu_bluestar_city
-msgid "Cities"
-msgstr "Localités"
 
 #. module: bss_city_ch
 #: model:res.country.state,name:bss_city_ch.res_country_state_ch_ju
 msgid "Jura"
 msgstr "Jura"
 
-#. module: bss_city_ch
-#: field:bluestar.city,state_id:0
-msgid "State"
-msgstr "État"
-
-#. module: bss_city_ch
-#: field:bluestar.city,zip_type:0
-msgid "Zip types"
-msgstr "Types de NPA"
 
 #. module: bss_city_ch
 #: field:bluestar.city,name:0
@@ -157,17 +107,6 @@ msgid "Uri"
 msgstr "Uri"
 
 #. module: bss_city_ch
-#: view:res.partner:0
-#: field:res.partner,city_id:0
-msgid "City Search"
-msgstr "Recherche de localité"
-
-#. module: bss_city_ch
-#: selection:bluestar.city,zip_type:0
-msgid "Home addresses only"
-msgstr "Uniquement adresse de domicile"
-
-#. module: bss_city_ch
 #: model:res.country.state,name:bss_city_ch.res_country_state_ch_fl
 msgid "Principality of Liechtenstein"
 msgstr "Principauté du Liechtenstein"
@@ -176,11 +115,6 @@ msgstr "Principauté du Liechtenstein"
 #: model:res.country.state,name:bss_city_ch.res_country_state_ch_zg
 msgid "Zug"
 msgstr "Zug"
-
-#. module: bss_city_ch
-#: model:ir.model,name:bss_city_ch.model_res_partner
-msgid "Partner"
-msgstr "Partenaire"
 
 #. module: bss_city_ch
 #: model:res.country.state,name:bss_city_ch.res_country_state_ch_it
@@ -192,10 +126,6 @@ msgstr "Italie (seulement pour 6911 Campione)"
 msgid "Appenzell Innerrhoden"
 msgstr "Appenzell Rhodes-Intérieures"
 
-#. module: bss_city_ch
-#: selection:bluestar.city,zip_type:0
-msgid "PO Box only"
-msgstr "Uniquement boîtes postales"
 
 #. module: bss_city_ch
 #: model:res.country.state,name:bss_city_ch.res_country_state_ch_ti
@@ -222,10 +152,6 @@ msgstr "Entreprise"
 msgid "Glarus"
 msgstr "Glaris"
 
-#. module: bss_city_ch
-#: field:res.country.state,unique_code:0
-msgid "Unique code"
-msgstr "Code unique"
 
 #. module: bss_city_ch
 #: model:res.country.state,name:bss_city_ch.res_country_state_ch_zh
@@ -252,12 +178,4 @@ msgstr "Neuchâtel"
 msgid "Lucerne"
 msgstr "Lucerne"
 
-#. module: bss_city_ch
-#: model:ir.model,name:bss_city_ch.model_res_country_state
-msgid "Country state"
-msgstr "État"
 
-#. module: bss_city_ch
-#: selection:bluestar.city,zip_type:0
-msgid "Home addresses and PO Box"
-msgstr "Adresses privées et case postales"

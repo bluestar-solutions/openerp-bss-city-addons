@@ -31,7 +31,9 @@ Search for zip codes and cities
 
 Add a search field in partner form view. The search field can search data by postal codes or city name.
 
-When a user selects a city, the module fills the following fields automatically  : postal code, city, state and country.    
+When a user selects a city, the module fills the following fields automatically  : postal code, city, state and country.
+
+It depends on Swiss Cities and French Cities to get datas. 
     """,
     'author': 'Bluestar Solutions Sàrl',
     'website': 'http://www.blues2.ch',
