@@ -38,12 +38,16 @@ class bluestar_city(osv.osv):
             result[city.id] = '%(zip)s %(city)s' % {'zip': city.zip , 'city': city.long_name}
         return result
 
-    def _get_is_swiss(self, cr, uid, ids, field_name, arg, context):
+    def _get_is_country_of_company(self, cr, uid, ids, field_name, arg, context):
         result = {}
-        res_country_obj = self.pool.get('res.country')
-        swiss_country_id = res_country_obj.search(cr, uid, [('code', '=', 'CH')], context=context)
+
+        country_id = self.pool.get('res.users').browse(cr, uid, uid, context).company_id.country_id
+
+        if not country_id:
+            return dict.fromkeys(ids, False)
+
         for city in self.browse(cr, uid, ids, context=context):
-            result[city.id] = city.country_id.id in swiss_country_id
+            result[city.id] = city.country_id == country_id
         return result
 
     _columns = {
@@ -55,10 +59,12 @@ class bluestar_city(osv.osv):
         'state_id': fields.many2one('res.country.state', 'State'),
         'country_id': fields.many2one('res.country', 'Country'),
         'name': fields.function(_get_name, type='char', method=True, store=True, string='Name'),
-        'is_swiss': fields.function(_get_is_swiss, type='boolean', method=True, store=True)
+        'is_country_of_company': fields.function(_get_is_country_of_company,
+                                                 type='boolean',
+                                                 method=True, store={'res.company': (lambda obj, cr, uid, ids, context=None: obj.pool.get('bluestar.city').search(cr, uid, [], context=context), ['country_id'], 10)})
     }
 
-    _order = 'is_swiss DESC, country_id, name asc'
+    _order = 'is_country_of_company DESC, country_id, name asc'
 
 bluestar_city()
 
