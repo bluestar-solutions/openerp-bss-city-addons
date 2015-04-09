@@ -59,9 +59,10 @@ class bluestar_city(osv.osv):
         'state_id': fields.many2one('res.country.state', 'State'),
         'country_id': fields.many2one('res.country', 'Country'),
         'name': fields.function(_get_name, type='char', method=True, store=True, string='Name'),
-        'is_country_of_company': fields.function(_get_is_country_of_company,
-                                                 type='boolean',
-                                                 method=True, store={'res.company': (lambda obj, cr, uid, ids, context=None: obj.pool.get('bluestar.city').search(cr, uid, [], context=context), ['country_id'], 10)})
+        'is_country_of_company': fields.function(
+            _get_is_country_of_company, type='boolean', method=True,
+            store={'res.company': (lambda obj, cr, uid, ids, context=None: obj.pool.get('bluestar.city').search(cr, uid, [], context=context), ['country_id'], 10),
+                   'bluestar.city': (lambda obj, cr, uid, ids, context=None: ids, ['country_id'], 10)})
     }
 
     _order = 'is_country_of_company DESC, country_id, name asc'
