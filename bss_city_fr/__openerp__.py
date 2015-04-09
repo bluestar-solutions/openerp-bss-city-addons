@@ -22,7 +22,7 @@
 
 {
     'name': 'French Cities',
-    'version': 'master',
+    'version': '7.0.1.0',
     "category" : 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
