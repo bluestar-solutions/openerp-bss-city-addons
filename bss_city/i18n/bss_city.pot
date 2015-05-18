@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-02 13:13+0000\n"
-"PO-Revision-Date: 2014-04-02 13:13+0000\n"
+"POT-Creation-Date: 2015-05-18 15:20+0000\n"
+"PO-Revision-Date: 2015-05-18 15:20+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,77 +19,6 @@ msgstr ""
 #: view:bluestar.city:0
 #: model:ir.model,name:bss_city.model_bluestar_city
 msgid "City"
-msgstr ""
-
-#. module: bss_city
-#: field:bluestar.city,long_name:0
-msgid "Long name"
-msgstr ""
-
-#. module: bss_city
-#: field:bluestar.city,zip_type:0
-msgid "Zip types"
-msgstr ""
-
-#. module: bss_city
-#: field:bluestar.city,name:0
-msgid "Name"
-msgstr ""
-
-#. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "Business"
-msgstr ""
-
-#. module: bss_city
-#: field:bluestar.city,zip_complement:0
-msgid "Zip complement"
-msgstr ""
-
-#. module: bss_city
-#: field:bluestar.city,country_id:0
-msgid "Country"
-msgstr ""
-
-#. module: bss_city
-#: field:bluestar.city,zip:0
-msgid "Zip"
-msgstr ""
-
-#. module: bss_city
-#: field:res.country.state,unique_code:0
-msgid "Unique code"
-msgstr ""
-
-#. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "Internal for the Post"
-msgstr ""
-
-#. module: bss_city
-#: field:bluestar.city,short_name:0
-msgid "Short name"
-msgstr ""
-
-#. module: bss_city
-#: view:res.partner:0
-#: field:res.partner,city_id:0
-msgid "City Search"
-msgstr ""
-
-#. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "Home addresses only"
-msgstr ""
-
-#. module: bss_city
-#: model:ir.model,name:bss_city.model_res_partner
-msgid "Partner"
-msgstr ""
-
-#. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "PO Box only"
 msgstr ""
 
 #. module: bss_city
@@ -105,12 +34,12 @@ msgid "Country state"
 msgstr ""
 
 #. module: bss_city
-#: field:bluestar.city,state_id:0
-msgid "State"
+#: field:bluestar.city,is_country_of_company:0
+msgid "unknown"
 msgstr ""
 
 #. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "Home addresses and PO Box"
+#: model:ir.model,name:bss_city.model_res_partner
+msgid "Partner"
 msgstr ""
 
