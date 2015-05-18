@@ -25,24 +25,18 @@
     "category": 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
-Search for french zip codes and cities
-=====================================
+List of french zip codes and cities
+===================================
 
 This module imports a list of all french postal codes and cities.
-
-These datas are used by bss_city to search partner by postal codes
-or city name.
     """,
     'author': 'Bluestar Solutions Sàrl',
     'website': 'http://www.blues2.ch',
     'depends': ['bss_city'],
-    'init_xml': [],
-    'update_xml': [
+    'data': [
         'datas/country_state_data.xml',
         'datas/bluestar.city.csv',
     ],
-    'demo_xml': [],
-    'test': [],
     'installable': True,
     'application': False,
     'auto_install': False,
