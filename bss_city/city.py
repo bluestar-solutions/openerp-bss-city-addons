@@ -27,21 +27,27 @@ ZIP_TYPES = [('10', 'Home addresses and PO Box'),
              ('40', 'Business'),
              ('80', 'Internal for the Post')]
 
-class bluestar_city(osv.osv):
 
+class bluestar_city(osv.osv):
     _name = "bluestar.city"
     _description = "City"
 
     def _get_name(self, cr, uid, ids, field_name, arg, context):
         result = {}
         for city in self.browse(cr, uid, ids, context=context):
-            result[city.id] = '%(zip)s %(city)s' % {'zip': city.zip , 'city': city.long_name}
+            result[city.id] = '%(zip)s %(city)s' % {
+                'zip': city.zip,
+                'city': city.long_name
+            }
         return result
 
-    def _get_is_country_of_company(self, cr, uid, ids, field_name, arg, context):
+    def _get_is_country_of_company(self, cr, uid, ids, field_name,
+                                   arg, context):
         result = {}
 
-        country_id = self.pool.get('res.users').browse(cr, uid, uid, context).company_id.country_id
+        country_id = self.pool.get('res.users').browse(
+            cr, uid, uid, context
+        ).company_id.country_id
 
         if not country_id:
             return dict.fromkeys(ids, False)
@@ -58,19 +64,32 @@ class bluestar_city(osv.osv):
         'long_name': fields.char('Long name', size=27),
         'state_id': fields.many2one('res.country.state', 'State'),
         'country_id': fields.many2one('res.country', 'Country'),
-        'name': fields.function(_get_name, type='char', method=True, store=True, string='Name'),
+        'name': fields.function(
+            _get_name, type='char', method=True, store=True, string='Name'
+        ),
         'is_country_of_company': fields.function(
             _get_is_country_of_company, type='boolean', method=True,
-            store={'res.company': (lambda obj, cr, uid, ids, context=None: obj.pool.get('bluestar.city').search(cr, uid, [], context=context), ['country_id'], 10),
-                   'bluestar.city': (lambda obj, cr, uid, ids, context=None: ids, ['country_id'], 10)})
+            store={
+                'res.company': (
+                    lambda obj, cr, uid, ids, context=None:
+                        obj.pool.get('bluestar.city').search(
+                            cr, uid, [], context=context
+                        ), ['country_id'], 10
+                ),
+                'bluestar.city': (
+                    lambda obj, cr, uid, ids, context=None: ids,
+                    ['country_id'], 10
+                )
+            }
+        )
     }
 
     _order = 'is_country_of_company DESC, country_id, name asc'
 
 bluestar_city()
 
-class bluestar_partner(osv.osv):
 
+class bluestar_partner(osv.osv):
     _inherit = 'res.partner'
     _description = "Bluestar City Partner"
 
@@ -96,3 +115,5 @@ class bluestar_partner(osv.osv):
         return {'value': v}
 
 bluestar_partner()
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
