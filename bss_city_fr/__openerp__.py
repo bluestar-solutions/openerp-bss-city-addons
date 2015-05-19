@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
-#    
+#
 #    OpenERP, Open Source Management Solution
 #    Copyright (C) 2014 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
@@ -15,15 +15,14 @@
 #    GNU Affero General Public License for more details.
 #
 #    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.     
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
 
 {
     'name': 'French Cities',
     'version': 'master',
-    "category" : 'Bluestar/Generic module',
+    "category": 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
 Search for french zip codes and cities
@@ -31,20 +30,23 @@ Search for french zip codes and cities
 
 This module imports a list of all french postal codes and cities.
 
-These datas are used by bss_city to search partner by postal codes or city name.
+These datas are used by bss_city to search partner by postal codes
+or city name.
     """,
     'author': 'Bluestar Solutions Sàrl',
     'website': 'http://www.blues2.ch',
     'depends': ['bss_city'],
     'init_xml': [],
     'update_xml': [
-                   'datas/country_state_data.xml',
-                   'datas/bluestar.city.csv',],
+        'datas/country_state_data.xml',
+        'datas/bluestar.city.csv',
+    ],
     'demo_xml': [],
     'test': [],
     'installable': True,
     'application': False,
     'auto_install': False,
-    'images' : [],
+    'images': [],
 }
+
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
