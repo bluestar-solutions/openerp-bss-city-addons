@@ -57,30 +57,35 @@ class bluestar_city(osv.osv):
         return result
 
     _columns = {
-        'zip_type': fields.selection(ZIP_TYPES, 'Zip types'),
+        'zip_type': fields.selection(ZIP_TYPES, 'Zip Types'),
         'zip': fields.char('Zip', size=10),
-        'zip_complement': fields.char('Zip complement', size=2),
-        'short_name': fields.char('Short name', size=18),
-        'long_name': fields.char('Long name', size=27),
+        'zip_complement': fields.char('Zip Complement', size=2),
+        'short_name': fields.char('Short Name', size=18),
+        'long_name': fields.char('Long Name', size=27),
         'state_id': fields.many2one('res.country.state', 'State'),
         'country_id': fields.many2one('res.country', 'Country'),
         'name': fields.function(
-            _get_name, type='char', method=True, store=True, string='Name'
+            _get_name, type='char', method=True, store={
+                'bluestar.city': (
+                    lambda self, cr, uid, ids, ctx=None: ids,
+                    ['zip', 'city'], 10
+                ),
+            }, string='Name'
         ),
         'is_country_of_company': fields.function(
             _get_is_country_of_company, type='boolean', method=True,
             store={
                 'res.company': (
-                    lambda obj, cr, uid, ids, context=None:
-                        obj.pool.get('bluestar.city').search(
-                            cr, uid, [], context=context
+                    lambda self, cr, uid, ids, ctx=None:
+                        self.pool.get('bluestar.city').search(
+                            cr, uid, [], context=ctx
                         ), ['country_id'], 10
                 ),
                 'bluestar.city': (
-                    lambda obj, cr, uid, ids, context=None: ids,
+                    lambda self, cr, uid, ids, ctx=None: ids,
                     ['country_id'], 10
                 )
-            }
+            }, string="Is Country of Company"
         )
     }
 
