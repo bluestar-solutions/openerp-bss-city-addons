@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2012-2014 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2012-2013 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,33 +19,6 @@
 #
 ##############################################################################
 
-
-{
-    'name': 'Cities',
-    'version': 'master',
-    "category": 'Bluestar/Generic module',
-    'complexity': "easy",
-    'description': """
-Common structure for localized cities addons
-============================================
-
-This is a technical addon to define common structure to store cities
-(used by localized cities addons).
-    """,
-    'author': 'Bluestar Solutions Sàrl',
-    'website': 'http://www.blues2.ch',
-    'depends': [],
-    'data': [
-        'sql/remove_view_partner_bluestar_city_form_if_exists.sql',
-
-        'security/ir.model.access.csv',
-
-        'city_view.xml'
-    ],
-    'installable': True,
-    'application': False,
-    'auto_install': False,
-    'images': [],
-}
+import crm_lead
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

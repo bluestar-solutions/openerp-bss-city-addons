@@ -88,32 +88,4 @@ class bluestar_city(osv.osv):
 
 bluestar_city()
 
-
-class bluestar_partner(osv.osv):
-    _inherit = 'res.partner'
-    _description = "Bluestar City Partner"
-
-    _columns = {
-        'city_id': fields.many2one('bluestar.city',
-                                   'City Search',
-                                   domain="[('zip_type', 'not in', ['80'])]",
-                                   required=False, store=False),
-    }
-
-    def onchange_city_id(self, cr, uid, ids, city_id):
-        v = {}
-
-        if city_id:
-            city = self.pool.get('bluestar.city').browse(cr, uid, city_id)
-            v['zip'] = city.zip
-            v['city'] = city.long_name
-            v['country_id'] = city.country_id.id
-            if city.state_id:
-                v['state_id'] = city.state_id.id
-            v['city_id'] = None
-
-        return {'value': v}
-
-bluestar_partner()
-
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

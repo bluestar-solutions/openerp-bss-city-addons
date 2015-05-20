@@ -25,31 +25,23 @@
     "category": 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
-Search for swiss zip codes and cities
-=====================================
+List of swiss zip codes and cities
+==================================
 
 This module imports a list of all swiss postal codes and cities.
-
-These datas are used by bss_city to search partner by postal codes
-or city name.
     """,
     'author': 'Bluestar Solutions Sàrl',
     'website': 'http://www.blues2.ch',
     'depends': ['bss_city'],
     'init_xml': [],
-    'update_xml': [
+    'data': [
         'datas/country_state_data.xml',
         'datas/bluestar.city.csv'
     ],
-    'demo_xml': [],
-    'test': [],
     'installable': True,
     'application': False,
     'auto_install': False,
-    'images': [
-        'images/city_search_1.png',
-        'images/city_search_2.png',
-        'images/city_search_3.png',
-    ],
+    'images': [],
 }
+
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

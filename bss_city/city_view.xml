@@ -40,18 +40,5 @@
 		<menuitem action="action_bluestar_city" id="menu_bluestar_city"
 			parent="base.menu_localisation" sequence="3" />
 
-		<record model="ir.ui.view" id="view_partner_bluestar_city_form">
-			<field name="name">res.partner.bluestar.city.form.inherit</field>
-			<field name="model">res.partner</field>
-			<field name="inherit_id" ref="base.view_partner_form" />
-			<field name="arch" type="xml">
-				<field name="city"
-					position="before">
-					<field name="city_id" on_change="onchange_city_id(city_id)" placeholder="City Search" />
-					<newline />
-				</field>				
-			</field>
-		</record>
-
 	</data>
 </openerp>

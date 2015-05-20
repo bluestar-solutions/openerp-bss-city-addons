@@ -21,31 +21,34 @@
 
 
 {
-    'name': 'Cities',
+    'name': 'Partner City Search',
     'version': 'master',
     "category": 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
-Common structure for localized cities addons
-============================================
+Search for zip codes and cities in partners
+===========================================
 
-This is a technical addon to define common structure to store cities
-(used by localized cities addons).
+Add a search field in partner form view. The search field can search data by
+postal codes or city name.
+
+When a user selects a city, the module fills the following fields
+automatically  : postal code, city, state and country.
+
+It depends on an external module to import the data, for example bss_city_ch.
     """,
     'author': 'Bluestar Solutions Sàrl',
     'website': 'http://www.blues2.ch',
-    'depends': [],
-    'data': [
-        'sql/remove_view_partner_bluestar_city_form_if_exists.sql',
-
-        'security/ir.model.access.csv',
-
-        'city_view.xml'
-    ],
+    'depends': ["bss_city"],
+    'data': ['res_partner_view.xml'],
     'installable': True,
     'application': False,
     'auto_install': False,
-    'images': [],
+    'images': [
+        'images/city_search_1.png',
+        'images/city_search_2.png',
+        'images/city_search_3.png',
+    ],
 }
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

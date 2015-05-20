@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="view_crm_lead_bluestar_city_form">
+			<field name="name">crm.lead.bluestar.city.form.inherit</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_leads" />
+			<field name="arch" type="xml">
+				<field name="city"
+					position="before">
+					<field name="city_id" on_change="onchange_city_id(city_id)" placeholder="City Search" />
+					<newline />
+				</field>				
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="view_crm_lead_oppor_bluestar_city_form">
+			<field name="name">crm.lead.oppor.bluestar.city.form.inherit</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_oppor" />
+			<field name="arch" type="xml">
+				<field name="city"
+					position="before">
+					<field name="city_id" on_change="onchange_city_id(city_id)" placeholder="City Search" />
+					<newline />
+				</field>				
+			</field>
+		</record>
+
+	</data>
+</openerp>

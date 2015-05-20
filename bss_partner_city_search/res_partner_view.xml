@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="view_partner_bluestar_city_form">
+			<field name="name">res.partner.bluestar.city.form.inherit</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_form" />
+			<field name="arch" type="xml">
+				<field name="city"
+					position="before">
+					<field name="city_id" on_change="onchange_city_id(city_id)" placeholder="City Search" 
+                            attrs="{'readonly': [('use_parent_address', '=', True)]}" />
+					<newline />
+				</field>				
+			</field>
+		</record>
+
+	</data>
+</openerp>
