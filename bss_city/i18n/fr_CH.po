@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-18 15:20+0000\n"
-"PO-Revision-Date: 2015-05-18 17:39+0200\n"
+"POT-Creation-Date: 2015-05-20 13:26+0000\n"
+"PO-Revision-Date: 2015-05-20 15:28+0200\n"
 "Last-Translator: Hervé <herve.martinet@blues2.ch>\n"
 "Language-Team: \n"
 "Language: fr_CH\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1431963596.0\n"
+"X-POOTLE-MTIME: 1432128485.0\n"
 
 #. module: bss_city
 #: view:bluestar.city:0
@@ -37,13 +37,14 @@ msgstr "État"
 
 #. module: bss_city
 #: field:bluestar.city,is_country_of_company:0
-msgid "unknown"
-msgstr "inconnu"
+msgid "Is Country of Company"
+msgstr "Est le pays de la société"
 
-#. module: bss_city
-#: model:ir.model,name:bss_city.model_res_partner
-msgid "Partner"
-msgstr "Partenaire"
+#~ msgid "unknown"
+#~ msgstr "inconnu"
+
+#~ msgid "Partner"
+#~ msgstr "Partenaire"
 
 #~ msgid "Long name"
 #~ msgstr "Nom long"

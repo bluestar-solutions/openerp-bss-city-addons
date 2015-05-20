@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-18 15:20+0000\n"
-"PO-Revision-Date: 2015-05-18 15:20+0000\n"
+"POT-Creation-Date: 2015-05-20 13:26+0000\n"
+"PO-Revision-Date: 2015-05-20 13:26+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -35,11 +35,6 @@ msgstr ""
 
 #. module: bss_city
 #: field:bluestar.city,is_country_of_company:0
-msgid "unknown"
-msgstr ""
-
-#. module: bss_city
-#: model:ir.model,name:bss_city.model_res_partner
-msgid "Partner"
+msgid "Is Country of Company"
 msgstr ""
 
