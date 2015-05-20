@@ -24,7 +24,7 @@ from openerp.osv import osv, fields
 
 class bluestar_country_state(osv.osv):
     _inherit = 'res.country.state'
-    _description = "Bluestar country state"
+    _description = "Country State"
 
     def _get_unique_code(self, cr, uid, ids, field_name, arg, context):
         result = {}
@@ -40,7 +40,7 @@ class bluestar_country_state(osv.osv):
                             required=True, translate=True),
         'unique_code': fields.function(_get_unique_code, type='char',
                                        method=True, store=True,
-                                       string='Unique code'),
+                                       string='Unique Code'),
     }
 
     def name_search(self, cr, user, name='', args=None, operator='ilike',
