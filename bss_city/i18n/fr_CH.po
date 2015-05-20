@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 13:26+0000\n"
-"PO-Revision-Date: 2015-05-20 15:28+0200\n"
+"POT-Creation-Date: 2015-05-20 15:02+0000\n"
+"PO-Revision-Date: 2015-05-20 17:04+0200\n"
 "Last-Translator: Hervé <herve.martinet@blues2.ch>\n"
 "Language-Team: \n"
 "Language: fr_CH\n"
@@ -15,13 +15,78 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1432128485.0\n"
+"X-POOTLE-MTIME: 1432134288.0\n"
 
 #. module: bss_city
 #: view:bluestar.city:0
 #: model:ir.model,name:bss_city.model_bluestar_city
 msgid "City"
 msgstr "Ville"
+
+#. module: bss_city
+#: field:bluestar.city,long_name:0
+msgid "Long Name"
+msgstr "Nom long"
+
+#. module: bss_city
+#: field:bluestar.city,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: bss_city
+#: selection:bluestar.city,zip_type:0
+msgid "Business"
+msgstr "Entreprise"
+
+#. module: bss_city
+#: field:bluestar.city,is_country_of_company:0
+msgid "Is Country of Company"
+msgstr "Est le pays de la société"
+
+#. module: bss_city
+#: field:bluestar.city,country_id:0
+msgid "Country"
+msgstr "Pays"
+
+#. module: bss_city
+#: field:bluestar.city,zip:0
+msgid "Zip"
+msgstr "NPA"
+
+#. module: bss_city
+#: selection:bluestar.city,zip_type:0
+msgid "Internal for the Post"
+msgstr "Interne à la Poste"
+
+#. module: bss_city
+#: field:bluestar.city,short_name:0
+msgid "Short Name"
+msgstr "Nom court"
+
+#. module: bss_city
+#: selection:bluestar.city,zip_type:0
+msgid "Home addresses only"
+msgstr "Uniquement adresse de domicile"
+
+#. module: bss_city
+#: field:bluestar.city,zip_type:0
+msgid "Zip Types"
+msgstr "Types de NPA"
+
+#. module: bss_city
+#: field:bluestar.city,zip_complement:0
+msgid "Zip Complement"
+msgstr "Complément NPA"
+
+#. module: bss_city
+#: field:res.country.state,unique_code:0
+msgid "Unique Code"
+msgstr "Code unique"
+
+#. module: bss_city
+#: selection:bluestar.city,zip_type:0
+msgid "PO Box only"
+msgstr "Uniquement boîtes postales"
 
 #. module: bss_city
 #: view:bluestar.city:0
@@ -36,9 +101,14 @@ msgid "Country state"
 msgstr "État"
 
 #. module: bss_city
-#: field:bluestar.city,is_country_of_company:0
-msgid "Is Country of Company"
-msgstr "Est le pays de la société"
+#: field:bluestar.city,state_id:0
+msgid "State"
+msgstr "État"
+
+#. module: bss_city
+#: selection:bluestar.city,zip_type:0
+msgid "Home addresses and PO Box"
+msgstr "Adresses privées et case postales"
 
 #~ msgid "unknown"
 #~ msgstr "inconnu"
@@ -52,41 +122,14 @@ msgstr "Est le pays de la société"
 #~ msgid "Zip types"
 #~ msgstr "NPA"
 
-#~ msgid "Name"
-#~ msgstr "Nom"
-
-#~ msgid "Business"
-#~ msgstr "Entreprise"
-
 #~ msgid "Zip complement"
 #~ msgstr "Complément NPA"
 
-#~ msgid "Country"
-#~ msgstr "Pays"
-
-#~ msgid "Zip"
-#~ msgstr "NPA"
-
 #~ msgid "Unique code"
 #~ msgstr "Code unique"
-
-#~ msgid "Internal for the Post"
-#~ msgstr "Interne à la Poste"
 
 #~ msgid "Short name"
 #~ msgstr "Nom court"
 
 #~ msgid "City Search"
 #~ msgstr "Recherche de localité"
-
-#~ msgid "Home addresses only"
-#~ msgstr "Uniquement adresse de domicile"
-
-#~ msgid "PO Box only"
-#~ msgstr "Uniquement boîtes postales"
-
-#~ msgid "State"
-#~ msgstr "État"
-
-#~ msgid "Home addresses and PO Box"
-#~ msgstr "Adresses privées et case postales"
