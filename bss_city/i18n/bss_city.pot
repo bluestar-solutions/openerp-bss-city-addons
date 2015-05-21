@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-02 13:13+0000\n"
-"PO-Revision-Date: 2014-04-02 13:13+0000\n"
+"POT-Creation-Date: 2015-05-20 15:02+0000\n"
+"PO-Revision-Date: 2015-05-20 15:02+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -23,12 +23,7 @@ msgstr ""
 
 #. module: bss_city
 #: field:bluestar.city,long_name:0
-msgid "Long name"
-msgstr ""
-
-#. module: bss_city
-#: field:bluestar.city,zip_type:0
-msgid "Zip types"
+msgid "Long Name"
 msgstr ""
 
 #. module: bss_city
@@ -42,8 +37,8 @@ msgid "Business"
 msgstr ""
 
 #. module: bss_city
-#: field:bluestar.city,zip_complement:0
-msgid "Zip complement"
+#: field:bluestar.city,is_country_of_company:0
+msgid "Is Country of Company"
 msgstr ""
 
 #. module: bss_city
@@ -57,24 +52,13 @@ msgid "Zip"
 msgstr ""
 
 #. module: bss_city
-#: field:res.country.state,unique_code:0
-msgid "Unique code"
-msgstr ""
-
-#. module: bss_city
 #: selection:bluestar.city,zip_type:0
 msgid "Internal for the Post"
 msgstr ""
 
 #. module: bss_city
 #: field:bluestar.city,short_name:0
-msgid "Short name"
-msgstr ""
-
-#. module: bss_city
-#: view:res.partner:0
-#: field:res.partner,city_id:0
-msgid "City Search"
+msgid "Short Name"
 msgstr ""
 
 #. module: bss_city
@@ -83,8 +67,18 @@ msgid "Home addresses only"
 msgstr ""
 
 #. module: bss_city
-#: model:ir.model,name:bss_city.model_res_partner
-msgid "Partner"
+#: field:bluestar.city,zip_type:0
+msgid "Zip Types"
+msgstr ""
+
+#. module: bss_city
+#: field:bluestar.city,zip_complement:0
+msgid "Zip Complement"
+msgstr ""
+
+#. module: bss_city
+#: field:res.country.state,unique_code:0
+msgid "Unique Code"
 msgstr ""
 
 #. module: bss_city
