@@ -1,2 +1,7 @@
 "id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
-"access_city_user","city","model_bluestar_city","base.group_user","True","False","False","False"
+"access_bluestar_city","bluestar.city","model_bluestar_city",,1,0,0,0
+"access_bluestar_city_no_one","bluestar.city group_no_one","model_bluestar_city","base.group_no_one",1,1,1,1
+"access_bss_state_import_type","bss.state.import_type","model_bss_state_import_type",,1,0,0,0
+"access_bss_state_import_type_no_one","bss.state.import_type group_no_one","model_bss_state_import_type","base.group_no_one",1,1,1,1
+"access_bss_city_import_type","bss.city.import_type","model_bss_city_import_type",,1,0,0,0
+"access_bss_city_import_type_no_one","bss.city.import_type group_no_one","model_bss_city_import_type","base.group_no_one",1,1,1,1

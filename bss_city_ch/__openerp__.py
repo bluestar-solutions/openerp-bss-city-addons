@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2012-2014 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2012-2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -20,13 +20,13 @@
 ##############################################################################
 
 {
-    'name': 'Swiss Cities',
+    'name': 'Swiss Postal Codes',
     'version': 'master',
     "category": 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
-List of swiss zip codes and cities
-==================================
+Importation of swiss postal codes
+=================================
 
 This module imports a list of all swiss postal codes and cities.
     """,
@@ -35,8 +35,12 @@ This module imports a list of all swiss postal codes and cities.
     'depends': ['bss_city'],
     'init_xml': [],
     'data': [
-        'datas/country_state_data.xml',
-        'datas/bluestar.city.csv'
+        'data/bss_state_import_type.xml',
+        'data/bss_city_import_type.xml',
+    ],
+    'demo': [
+        'demo/res.country.state.yml',
+        'demo/bluestar.city.yml',
     ],
     'installable': True,
     'application': False,

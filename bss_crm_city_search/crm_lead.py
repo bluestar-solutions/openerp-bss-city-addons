@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2012-2013 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2012-2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -28,7 +28,6 @@ class bluestar_partner(osv.osv):
     _columns = {
         'city_id': fields.many2one('bluestar.city',
                                    'City Search',
-                                   domain="[('zip_type', 'not in', ['80'])]",
                                    required=False, store=False),
     }
 

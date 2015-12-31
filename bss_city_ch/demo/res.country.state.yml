@@ -1,0 +1,16 @@
+-
+ !record {model: res.country.state, id: demo_state_ne}:
+   code: NE
+   name: Neuchâtel
+   country_id: base.ch
+-
+ !record {model: res.country.state, id: demo_state_vd}:
+   code: VD
+   name: Vaud
+   country_id: base.ch
+-
+ !record {model: res.country.state, id: demo_state_ju}:
+   code: JU
+   name: Jura
+   country_id: base.ch
+

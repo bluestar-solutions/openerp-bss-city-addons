@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2012-2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,7 +19,21 @@
 #
 ##############################################################################
 
-import wizard
+import base64
+import os
+
+from openerp.netsvc import logging
+from openerp.osv import osv
 
 
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+class bss_import_states(osv.TransientModel):
+    _inherit = 'bss.import_states'
+    _logger = logging.getLogger(_inherit)
+
+    def import_default_given_fr(self, cr, uid, wiz, context=None):
+        filename = os.path.join(os.path.dirname(__file__),
+                                '../data/states_fr_201512.csv')
+        wiz.file = base64.b64encode(open(filename).read())
+        self.import_default(cr, uid, wiz, context)
+
+bss_import_states()

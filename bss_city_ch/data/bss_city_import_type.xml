@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+        <record id="city_import_type_openedata_admin_ch" model="bss.city.import_type">
+            <field name="name">opendata.admin.ch CSV</field>
+            <field name="country_id" search="[('code', '=', 'CH')]" model="res.country" />
+            <field name="method">import_openedata_admin_ch</field>
+            <field name="given_file" eval="False"/>
+            <field name="comment"><![CDATA[<p>opendata.admin.ch CSV Import:</p>
+<p>Download and unzip file PLZO_CSV_WGS84.zip from 
+<a href="http://data.geo.admin.ch.s3.amazonaws.com/ch.swisstopo-vd.ortschaftenverzeichnis_plz/PLZO_CSV_WGS84.zip">
+http://data.geo.admin.ch.s3.amazonaws.com/ch.swisstopo-vd.ortschaftenverzeichnis_plz/PLZO_CSV_WGS84.zip</a>. Then import the CSV file.</p>
+<p>Source: Mensuration Officielle Suisse / swisstopo 
+(<a href="http://opendata.admin.ch/fr/dataset/ch-swisstopo-vd-ortschaftenverzeichnis-plz" target="_blank">http://opendata.admin.ch/fr/dataset/ch-swisstopo-vd-ortschaftenverzeichnis-plz</a>)</p>]]>
+            </field>
+        </record>
+
+    </data>
+</openerp>

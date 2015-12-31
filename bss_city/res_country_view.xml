@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+    
+        <record model="ir.actions.act_window" id="action_bss_import_states">
+            <field name="name">Import States</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">bss.import_states</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'default_country_id': active_id}</field>            
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_bss_import_cities">
+            <field name="name">Import Postal Codes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">bss.import_cities</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'default_country_id': active_id}</field>            
+        </record>
+
+        <record model="ir.ui.view" id="view_res_country_city_form">
+            <field name="name">res.country.city.form</field>
+            <field name="model">res.country</field>
+            <field name="inherit_id" ref="base.view_country_form"/>
+            <field name="arch" type="xml">
+                <field name="address_format" position="after">
+                    <group>
+                        <div>
+                            <button string="Import States" type="action" name="%(action_bss_import_states)d"/>
+                            <button string="Import Postal Codes" type="action" name="%(action_bss_import_cities)d"/>
+                        </div>
+                    </group>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

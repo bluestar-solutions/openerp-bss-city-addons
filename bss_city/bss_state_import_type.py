@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2012-2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,7 +19,21 @@
 #
 ##############################################################################
 
-import wizard
+from openerp.osv import osv, fields
 
+
+class bss_state_import_type(osv.osv):
+    _name = "bss.state.import_type"
+    _description = "State Import Type"
+
+    _columns = {
+        'name': fields.char("Name", translated=True),
+        'country_id': fields.many2one('res.country', "Country"),
+        'method': fields.char('Method'),
+        'given_file': fields.boolean('Given File'),
+        'comment': fields.text('Comment'),
+    }
+
+bss_state_import_type()
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

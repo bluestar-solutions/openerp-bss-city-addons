@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_res_country_state_city_form">
+            <field name="name">res.country.state.city.form</field>
+            <field name="model">res.country.state</field>
+            <field name="inherit_id" ref="base.view_country_state_form"/>
+            <field name="arch" type="xml">
+                <form position="replace">
+                    <form string="Region" version="7.0">
+                        <sheet>
+                            <div class="oe_title">
+                                <h1><field name="name"/></h1>
+                            </div>
+                            <group>
+                                <group>
+                                    <field name="code"/>
+                                    <field name="country_id" options="{&quot;no_open&quot;: True}"/>
+                                </group>
+                                <group>
+                                    <field name="active"/>
+                                    <field name="unique_code"/>
+                                </group>
+                            </group>
+                        </sheet>
+                    </form>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>
