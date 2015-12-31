@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2014 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2014-2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -20,13 +20,13 @@
 ##############################################################################
 
 {
-    'name': 'French Cities',
+    'name': 'French Postal Codes',
     'version': 'master',
     "category": 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
-List of french zip codes and cities
-===================================
+Importation of french postal codes
+==================================
 
 This module imports a list of all french postal codes and cities.
     """,
@@ -34,8 +34,8 @@ This module imports a list of all french postal codes and cities.
     'website': 'http://www.blues2.ch',
     'depends': ['bss_city'],
     'data': [
-        'datas/country_state_data.xml',
-        'datas/bluestar.city.csv',
+        'data/bss_state_import_type.xml',
+        'data/bss_city_import_type.xml',
     ],
     'installable': True,
     'application': False,

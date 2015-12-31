@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+        <record id="city_import_type_default" model="bss.city.import_type">
+            <field name="name">Default</field>
+            <field name="method">import_default</field>
+            <field name="given_file" eval="False"/>
+            <field name="comment"><![CDATA[<p>Default file format is a CSV with following columns:</p>
+<ul>
+    <li>'zip': The ZIP code</li>
+    <li>'short_name': The short name</li>
+    <li>'long_name': The long name</li>
+    <li>'country_code': The country code</li>
+    <li>'state_code': The state code (can be empty)</li>
+</ul>]]>
+            </field>
+        </record>
+
+    </data>
+</openerp>

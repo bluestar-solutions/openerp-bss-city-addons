@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+        <record id="state_import_type_default_given_ch" model="bss.state.import_type">
+            <field name="name">Default (given file)</field>
+            <field name="country_id" search="[('code', '=', 'CH')]" model="res.country" />
+            <field name="method">import_default_given_ch</field>
+            <field name="given_file" eval="True"/>
+            <field name="comment"><![CDATA[<p>Default given file (12/2015)</p>]]>
+            </field>
+        </record>
+
+    </data>
+</openerp>

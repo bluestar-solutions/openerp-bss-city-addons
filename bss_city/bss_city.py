@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2012-2013 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2012-2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -21,16 +21,10 @@
 
 from openerp.osv import osv, fields
 
-ZIP_TYPES = [('10', 'Home addresses and PO Box'),
-             ('20', 'Home addresses only'),
-             ('30', 'PO Box only'),
-             ('40', 'Business'),
-             ('80', 'Internal for the Post')]
-
 
 class bluestar_city(osv.osv):
     _name = "bluestar.city"
-    _description = "City"
+    _description = "Postal Code"
 
     def _get_name(self, cr, uid, ids, field_name, arg, context):
         result = {}
@@ -57,9 +51,7 @@ class bluestar_city(osv.osv):
         return result
 
     _columns = {
-        'zip_type': fields.selection(ZIP_TYPES, 'Zip Types'),
         'zip': fields.char('Zip', size=10),
-        'zip_complement': fields.char('Zip Complement', size=2),
         'short_name': fields.char('Short Name', size=18),
         'long_name': fields.char('Long Name', size=27),
         'state_id': fields.many2one('res.country.state', 'State'),

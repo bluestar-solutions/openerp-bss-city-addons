@@ -1,0 +1,26 @@
+-
+ !record {model: res.country, id: demo_country_gr}:
+   code: SWGR
+   name: Galactic Republic
+   currency_id: base.USD
+   address_format: >
+     %(street)s
+     %(street2)s
+     %(city)s %(state_code)s %(zip)s
+     %(country_name)s
+-
+ !record {model: res.country.state, id: demo_state_nb}:
+   code: NB
+   name: Naboo
+   country_id: bss_city.demo_country_gr
+-
+ !record {model: res.country.state, id: demo_state_co}:
+   code: CO
+   name: Coruscant
+   country_id: bss_city.demo_country_gr
+-
+ !record {model: res.country.state, id: demo_state_tt}:
+   code: TT
+   name: Tatooine
+   country_id: bss_city.demo_country_gr
+

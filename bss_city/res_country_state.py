@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2012-2013 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2012-2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -22,9 +22,8 @@
 from openerp.osv import osv, fields
 
 
-class bluestar_country_state(osv.osv):
+class res_country_state(osv.osv):
     _inherit = 'res.country.state'
-    _description = "Country State"
 
     def _get_unique_code(self, cr, uid, ids, field_name, arg, context):
         result = {}
@@ -38,10 +37,31 @@ class bluestar_country_state(osv.osv):
     _columns = {
         'name': fields.char('State Name', size=64,
                             required=True, translate=True),
-        'unique_code': fields.function(_get_unique_code, type='char',
-                                       method=True, store=True,
-                                       string='Unique Code'),
+        'active': fields.boolean("Active"),
+        'unique_code': fields.function(
+            _get_unique_code, type='char', method=True, store={
+                'res.country.state': (
+                    lambda self, cr, uid, ids, ctx=None: ids,
+                    ['code'], 10
+                ),
+                'res.country': (
+                    lambda self, cr, uid, ids, ctx=None:
+                    self.pool.get('res.country.state').search(cr, uid, [
+                        ('country_id.id', 'in', ids),
+                    ], context=ctx),
+                    ['code'], 10
+                ),
+            }, string='Unique Code'),
     }
+
+    _defaults = {
+        'active': True,
+    }
+
+    _sql_constraints = [
+        ('unique_code_unique', 'unique(unique_code)',
+         'Unique code has to be unique!')
+    ]
 
     def name_search(self, cr, user, name='', args=None, operator='ilike',
                     context=None, limit=100):
@@ -56,4 +76,4 @@ class bluestar_country_state(osv.osv):
                               limit=limit, context=context)
         return self.name_get(cr, user, ids, context)
 
-bluestar_country_state()
+res_country_state()
