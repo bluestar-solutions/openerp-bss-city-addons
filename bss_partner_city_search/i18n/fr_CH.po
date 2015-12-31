@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-18 15:21+0000\n"
+"POT-Creation-Date: 2015-12-31 15:33+0000\n"
 "PO-Revision-Date: 2015-05-18 17:33+0200\n"
 "Last-Translator: Hervé <herve.martinet@blues2.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 
 #. module: bss_partner_city_search
 #: view:res.partner:0
+#: field:res.partner,city_id:0
 msgid "City Search"
 msgstr "Rechercher ville"
 
