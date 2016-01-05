@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 15:02+0000\n"
-"PO-Revision-Date: 2015-05-20 15:02+0000\n"
+"POT-Creation-Date: 2015-12-31 15:31+0000\n"
+"PO-Revision-Date: 2015-12-31 15:31+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,54 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: bss_city
-#: view:bluestar.city:0
-#: model:ir.model,name:bss_city.model_bluestar_city
-msgid "City"
+#: code:addons/bss_city/wizard/bss_import_cities.py:96
+#, python-format
+msgid "First column header must be 'zip'."
+msgstr ""
+
+#. module: bss_city
+#: field:bluestar.city,zip:0
+msgid "Zip"
+msgstr ""
+
+#. module: bss_city
+#: field:res.country.state,unique_code:0
+msgid "Unique Code"
+msgstr ""
+
+#. module: bss_city
+#: field:bluestar.city,state_id:0
+msgid "State"
+msgstr ""
+
+#. module: bss_city
+#: model:ir.model,name:bss_city.model_bss_city_import_type
+msgid "City Import Type"
+msgstr ""
+
+#. module: bss_city
+#: view:bss.import_cities:0
+#: view:bss.import_states:0
+msgid "Import"
+msgstr ""
+
+#. module: bss_city
+#: field:bss.import_cities,type_id:0
+#: field:bss.import_states,type_id:0
+msgid "Type"
+msgstr ""
+
+#. module: bss_city
+#: field:bss.city.import_type,method:0
+#: field:bss.state.import_type,method:0
+msgid "Method"
+msgstr ""
+
+#. module: bss_city
+#: view:bss.import_cities:0
+#: model:ir.actions.act_window,name:bss_city.action_bss_import_cities
+#: view:res.country:0
+msgid "Import Postal Codes"
 msgstr ""
 
 #. module: bss_city
@@ -27,13 +72,51 @@ msgid "Long Name"
 msgstr ""
 
 #. module: bss_city
-#: field:bluestar.city,name:0
-msgid "Name"
+#: code:addons/bss_city/wizard/bss_import_cities.py:101
+#, python-format
+msgid "Second column header must be 'short_name'."
 msgstr ""
 
 #. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "Business"
+#: view:bss.import_states:0
+#: model:ir.actions.act_window,name:bss_city.action_bss_import_states
+#: model:ir.model,name:bss_city.model_bss_import_states
+#: view:res.country:0
+msgid "Import States"
+msgstr ""
+
+#. module: bss_city
+#: model:ir.model,name:bss_city.model_bss_import_cities
+msgid "Import Cities"
+msgstr ""
+
+#. module: bss_city
+#: view:bss.import_cities:0
+msgid "Warning: All existing postal codes for this country will be removed!"
+msgstr ""
+
+#. module: bss_city
+#: field:res.country.state,active:0
+msgid "Active"
+msgstr ""
+
+#. module: bss_city
+#: code:addons/bss_city/wizard/bss_import_cities.py:111
+#, python-format
+msgid "Fifth column header must be 'state_code'."
+msgstr ""
+
+#. module: bss_city
+#: code:addons/bss_city/wizard/bss_import_states.py:92
+#, python-format
+msgid "First column header must be 'code'."
+msgstr ""
+
+#. module: bss_city
+#: field:bluestar.city,name:0
+#: field:bss.city.import_type,name:0
+#: field:bss.state.import_type,name:0
+msgid "Name"
 msgstr ""
 
 #. module: bss_city
@@ -43,17 +126,63 @@ msgstr ""
 
 #. module: bss_city
 #: field:bluestar.city,country_id:0
+#: field:bss.city.import_type,country_id:0
+#: field:bss.import_cities,country_id:0
+#: field:bss.import_states,country_id:0
+#: field:bss.state.import_type,country_id:0
 msgid "Country"
 msgstr ""
 
 #. module: bss_city
-#: field:bluestar.city,zip:0
-msgid "Zip"
+#: view:res.country.state:0
+msgid "Region"
 msgstr ""
 
 #. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "Internal for the Post"
+#: code:addons/bss_city/wizard/bss_import_cities.py:90
+#: code:addons/bss_city/wizard/bss_import_cities.py:95
+#: code:addons/bss_city/wizard/bss_import_cities.py:100
+#: code:addons/bss_city/wizard/bss_import_cities.py:105
+#: code:addons/bss_city/wizard/bss_import_cities.py:110
+#: code:addons/bss_city/wizard/bss_import_states.py:86
+#: code:addons/bss_city/wizard/bss_import_states.py:91
+#: code:addons/bss_city/wizard/bss_import_states.py:96
+#: code:addons/bss_city/wizard/bss_import_states.py:105
+#, python-format
+msgid "Error!"
+msgstr ""
+
+#. module: bss_city
+#: view:bluestar.city:0
+#: model:ir.model,name:bss_city.model_bluestar_city
+msgid "Postal Code"
+msgstr ""
+
+#. module: bss_city
+#: code:addons/bss_city/wizard/bss_import_cities.py:91
+#, python-format
+msgid "Incorrect file format, 5 columns expected."
+msgstr ""
+
+#. module: bss_city
+#: field:bss.city.import_type,comment:0
+#: field:bss.import_cities,comment:0
+#: field:bss.import_states,comment:0
+#: field:bss.state.import_type,comment:0
+msgid "Comment"
+msgstr ""
+
+#. module: bss_city
+#: code:addons/bss_city/wizard/bss_import_states.py:87
+#, python-format
+msgid "Incorrect file format, at least 2 columns expected."
+msgstr ""
+
+#. module: bss_city
+#: view:bluestar.city:0
+#: model:ir.actions.act_window,name:bss_city.action_bss_city
+#: model:ir.ui.menu,name:bss_city.menu_bss_city
+msgid "Postal Codes"
 msgstr ""
 
 #. module: bss_city
@@ -62,35 +191,45 @@ msgid "Short Name"
 msgstr ""
 
 #. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "Home addresses only"
+#: model:ir.model,name:bss_city.model_bss_state_import_type
+msgid "State Import Type"
 msgstr ""
 
 #. module: bss_city
-#: field:bluestar.city,zip_type:0
-msgid "Zip Types"
+#: field:bss.city.import_type,given_file:0
+#: field:bss.import_cities,given_file:0
+#: field:bss.import_states,given_file:0
+#: field:bss.state.import_type,given_file:0
+msgid "Given File"
 msgstr ""
 
 #. module: bss_city
-#: field:bluestar.city,zip_complement:0
-msgid "Zip Complement"
+#: code:addons/bss_city/wizard/bss_import_states.py:106
+#, python-format
+msgid "Incorrect column format. Column '%s' must be in format 'name:[LOCALE_CODE]'"
 msgstr ""
 
 #. module: bss_city
-#: field:res.country.state,unique_code:0
-msgid "Unique Code"
+#: field:bss.import_cities,file:0
+#: field:bss.import_states,file:0
+msgid "File"
 msgstr ""
 
 #. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "PO Box only"
+#: sql_constraint:res.country.state:0
+msgid "Unique code has to be unique!"
 msgstr ""
 
 #. module: bss_city
-#: view:bluestar.city:0
-#: model:ir.actions.act_window,name:bss_city.action_bluestar_city
-#: model:ir.ui.menu,name:bss_city.menu_bluestar_city
-msgid "Cities"
+#: view:bss.import_cities:0
+#: view:bss.import_states:0
+msgid "Cancel"
+msgstr ""
+
+#. module: bss_city
+#: code:addons/bss_city/wizard/bss_import_cities.py:106
+#, python-format
+msgid "Third column header must be 'long_name'."
 msgstr ""
 
 #. module: bss_city
@@ -99,12 +238,14 @@ msgid "Country state"
 msgstr ""
 
 #. module: bss_city
-#: field:bluestar.city,state_id:0
-msgid "State"
+#: view:bss.import_cities:0
+#: view:bss.import_states:0
+msgid "or"
 msgstr ""
 
 #. module: bss_city
-#: selection:bluestar.city,zip_type:0
-msgid "Home addresses and PO Box"
+#: code:addons/bss_city/wizard/bss_import_states.py:97
+#, python-format
+msgid "Second column header must be 'name'."
 msgstr ""
 

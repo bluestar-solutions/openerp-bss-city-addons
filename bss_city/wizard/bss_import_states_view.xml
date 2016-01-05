@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_bss_import_states_form">
+            <field name="name">bss.import_states.form</field>
+            <field name="model">bss.import_states</field>
+            <field name="arch" type="xml">
+                <form string="Import States" version="7.0">
+                    <group>
+                        <group>
+                            <field name="country_id"/>
+                        </group>
+                        <group>
+                            <field name="type_id" on_change="type_id_change(type_id)"/>
+                        </group>
+                    </group>
+                    <field name="comment" nolabel="1" widget="html" style="margin: 0; text-align:left; width: 100%%"/>
+                    <field name="given_file" invisible="1"/>
+                    <group>
+                        <field name="file" attrs="{'required': [('given_file', '=', False)], 'invisible': [('given_file', '!=', False)]}"/>
+                    </group>
+                    
+                    <footer>
+                        <button string="Import" type="object" name="execute" class="oe_highlight"/> or
+                        <button string="Cancel" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

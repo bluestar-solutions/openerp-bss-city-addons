@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+        <record id="city_import_type_data_gouv:fr" model="bss.city.import_type">
+            <field name="name">data.gouv.fr CSV</field>
+            <field name="country_id" search="[('code', '=', 'FR')]" model="res.country" />
+            <field name="method">import_data_gouv_fr</field>
+            <field name="given_file" eval="False"/>
+            <field name="comment"><![CDATA[<p>data.gouv.fr CSV Import:</p>
+<p>Download and unzip file from 
+<a href="https://www.data.gouv.fr/fr/datasets/base-officielle-des-codes-postaux/" target="_blank">
+https://www.data.gouv.fr/fr/datasets/base-officielle-des-codes-postaux/</a>. Then import the CSV file.</p>
+<p>Source: Plateforme ouverte des données publiques françaises</p>]]>
+            </field>
+        </record>
+
+    </data>
+</openerp>

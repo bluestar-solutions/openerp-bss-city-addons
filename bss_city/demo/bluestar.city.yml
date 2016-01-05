@@ -1,0 +1,21 @@
+-
+ !record {model: bluestar.city, id: demo_city_theed}:
+   zip: 1001
+   short_name: Theed
+   long_name: Theed
+   country_id: bss_city.demo_country_gr
+   state_id: bss_city.demo_state_nb
+-
+ !record {model: bluestar.city, id: demo_city_gc}:
+   zip: 1002
+   short_name: Galactic City
+   long_name: Galactic City
+   country_id: bss_city.demo_country_gr
+   state_id: bss_city.demo_state_co
+-
+ !record {model: bluestar.city, id: demo_city_bestine}:
+   zip: 1003
+   short_name: Bestine
+   long_name: Bestine
+   country_id: bss_city.demo_country_gr
+   state_id: bss_city.demo_state_tt

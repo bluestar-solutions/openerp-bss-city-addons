@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+        <record id="state_import_type_default" model="bss.state.import_type">
+            <field name="name">Default</field>
+            <field name="method">import_default</field>
+            <field name="given_file" eval="False"/>
+            <field name="comment"><![CDATA[<p>Default file format is a CSV with following columns:</p>
+<ul>
+    <li>'code': The state code (unique by country)</li>
+    <li>'name': The state name in en_US</li>
+    <li>'name:[LOCALE_CODE]' multiple columns (optional): The state name in other languages ('name:fr_CH' for instance)</li>
+</ul>]]>
+            </field>
+        </record>
+
+    </data>
+</openerp>

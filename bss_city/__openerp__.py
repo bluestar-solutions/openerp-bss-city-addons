@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2012-2014 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
+#    Copyright (C) 2012-2015 Bluestar Solutions Sàrl (<http://www.blues2.ch>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -21,26 +21,36 @@
 
 
 {
-    'name': 'Cities',
-    'version': '7.0.1.1',
+    'name': 'Postal Codes',
+    'version': '7.0.2.0-20160104',
     "category": 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
-Common structure for localized cities addons
-============================================
+Common structure for localized postal codes addons
+==================================================
 
 This is a technical addon to define common structure to store cities
 (used by localized cities addons).
     """,
     'author': 'Bluestar Solutions Sàrl',
     'website': 'http://www.blues2.ch',
-    'depends': [],
+    'depends': ['sale'],
     'data': [
-        'sql/remove_view_partner_bluestar_city_form_if_exists.sql',
-
         'security/ir.model.access.csv',
 
-        'city_view.xml'
+        'data/bss_state_import_type.xml',
+        'data/bss_city_import_type.xml',
+
+        'wizard/bss_import_states_view.xml',
+        'wizard/bss_import_cities_view.xml',
+
+        'res_country_view.xml',
+        'res_country_state_view.xml',
+        'bss_city_view.xml',
+    ],
+    'demo': [
+        'demo/res.country.state.yml',
+        'demo/bluestar.city.yml',
     ],
     'installable': True,
     'application': False,

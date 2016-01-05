@@ -1,0 +1,21 @@
+-
+ !record {model: bluestar.city, id: demo_city_with_lake}:
+   zip: 2000
+   short_name: Neuchâtel
+   long_name: Neuchâtel
+   country_id: base.ch
+   state_id: bss_city_ch.demo_state_ne
+-
+ !record {model: bluestar.city, id: demo_city_without_lake}:
+   zip: 2300
+   short_name: La Chaux-de-Fonds
+   long_name: La Chaux-de-Fonds
+   country_id: base.ch
+   state_id: bss_city_ch.demo_state_ne
+-
+ !record {model: bluestar.city, id: demo_city_with_french_lake}:
+   zip: 1003
+   short_name: Lausanne
+   long_name: Lausanne
+   country_id: base.ch
+   state_id: bss_city_ch.demo_state_vd
