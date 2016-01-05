@@ -22,7 +22,7 @@
 
 {
     'name': 'Postal Codes',
-    'version': 'master',
+    'version': '7.0.2.0-20160104',
     "category": 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
