@@ -64,10 +64,10 @@ class bss_import_cities(osv.TransientModel):
             }
         }
 
-    def win1250_csv_reader(self, data, **kwargs):
+    def decoded_csv_reader(self, data, charset, **kwargs):
         csv_reader = csv.reader(data, **kwargs)
         for row in csv_reader:
-            yield [cell.decode('windows-1250').encode('utf-8') for cell in row]
+            yield [cell.decode(charset).encode('utf-8') for cell in row]
 
     def execute(self, cr, uid, ids, context=None):
         wiz = self.browse(cr, uid, ids[0], context)
