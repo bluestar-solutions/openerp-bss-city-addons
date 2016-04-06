@@ -39,7 +39,8 @@ class bss_import_cities(osv.TransientModel):
             context = {}
 
         file_input = io.BytesIO(base64.b64decode(wiz.file))
-        reader = self.win1250_csv_reader(file_input, delimiter=';')
+        reader = self.decoded_csv_reader(file_input, 'iso-8859-15',
+                                         delimiter=';')
 
         headers = reader.next()
         if len(headers) != 7:
