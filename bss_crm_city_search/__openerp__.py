@@ -22,7 +22,7 @@
 
 {
     'name': 'CRM City Search',
-    'version': '7.0.2.0-20160331',
+    'version': '7.0.2.0-20160427',
     "category": 'Bluestar/Generic module',
     'complexity': "easy",
     'description': """
