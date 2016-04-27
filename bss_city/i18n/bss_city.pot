@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-31 15:31+0000\n"
-"PO-Revision-Date: 2015-12-31 15:31+0000\n"
+"POT-Creation-Date: 2016-04-27 08:24+0000\n"
+"PO-Revision-Date: 2016-04-27 08:24+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -27,8 +27,8 @@ msgid "Zip"
 msgstr ""
 
 #. module: bss_city
-#: field:res.country.state,unique_code:0
-msgid "Unique Code"
+#: model:res.country.state,name:bss_city.demo_state_co
+msgid "Coruscant"
 msgstr ""
 
 #. module: bss_city
@@ -39,6 +39,11 @@ msgstr ""
 #. module: bss_city
 #: model:ir.model,name:bss_city.model_bss_city_import_type
 msgid "City Import Type"
+msgstr ""
+
+#. module: bss_city
+#: model:res.country.state,name:bss_city.demo_state_nb
+msgid "Naboo"
 msgstr ""
 
 #. module: bss_city
@@ -93,6 +98,11 @@ msgstr ""
 #. module: bss_city
 #: view:bss.import_cities:0
 msgid "Warning: All existing postal codes for this country will be removed!"
+msgstr ""
+
+#. module: bss_city
+#: model:res.country.state,name:bss_city.demo_state_tt
+msgid "Tatooine"
 msgstr ""
 
 #. module: bss_city
@@ -159,6 +169,11 @@ msgid "Postal Code"
 msgstr ""
 
 #. module: bss_city
+#: model:res.country,name:bss_city.demo_country_gr
+msgid "Galactic Republic"
+msgstr ""
+
+#. module: bss_city
 #: code:addons/bss_city/wizard/bss_import_cities.py:91
 #, python-format
 msgid "Incorrect file format, 5 columns expected."
@@ -201,6 +216,11 @@ msgstr ""
 #: field:bss.import_states,given_file:0
 #: field:bss.state.import_type,given_file:0
 msgid "Given File"
+msgstr ""
+
+#. module: bss_city
+#: field:res.country.state,unique_code:0
+msgid "Unique Code"
 msgstr ""
 
 #. module: bss_city
