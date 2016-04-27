@@ -9,7 +9,7 @@ msgstr ""
 "PO-Revision-Date: 2015-05-18 17:33+0200\n"
 "Last-Translator: Hervé <herve.martinet@blues2.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fr_CH\n"
+"Language: de_CH\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,9 +21,9 @@ msgstr ""
 #: view:res.partner:0
 #: field:res.partner,city_id:0
 msgid "City Search"
-msgstr "Rechercher ville"
+msgstr "Stadt suchen"
 
 #. module: bss_partner_city_search
 #: model:ir.model,name:bss_partner_city_search.model_res_partner
 msgid "Partner"
-msgstr "Partenaire"
+msgstr "Partner"
