@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-27 08:24+0000\n"
-"PO-Revision-Date: 2016-04-27 08:32+0200\n"
+"PO-Revision-Date: 2016-04-27 12:49+0200\n"
 "Last-Translator: Hervé <herve.martinet@blues2.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de_CH\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1461742327.0\n"
+"X-POOTLE-MTIME: 1461757788.0\n"
 
 #. module: bss_city
 #: code:addons/bss_city/wizard/bss_import_cities.py:96
@@ -36,7 +36,7 @@ msgstr "Coruscant"
 #. module: bss_city
 #: field:bluestar.city,state_id:0
 msgid "State"
-msgstr "Zustand"
+msgstr "Staat"
 
 #. module: bss_city
 #: model:ir.model,name:bss_city.model_bss_city_import_type
@@ -90,7 +90,7 @@ msgstr "Die Überschrift der zweiten Spalte muss 'short_name' lauten."
 #: model:ir.model,name:bss_city.model_bss_import_states
 #: view:res.country:0
 msgid "Import States"
-msgstr "Regionen importieren"
+msgstr "Staaten importieren"
 
 #. module: bss_city
 #: model:ir.model,name:bss_city.model_bss_import_cities
@@ -211,7 +211,7 @@ msgstr "Kurzer Name"
 #. module: bss_city
 #: model:ir.model,name:bss_city.model_bss_state_import_type
 msgid "State Import Type"
-msgstr "Importtyp Land"
+msgstr "Importtyp Staat"
 
 #. module: bss_city
 #: field:bss.city.import_type,given_file:0
@@ -260,7 +260,7 @@ msgstr "Die Überschrift der dritten Spalte muss 'long_name' lauten."
 #. module: bss_city
 #: model:ir.model,name:bss_city.model_res_country_state
 msgid "Country state"
-msgstr "Zustand"
+msgstr "Staat"
 
 #. module: bss_city
 #: view:bss.import_cities:0
